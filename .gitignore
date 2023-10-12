@@ -1,0 +1,16 @@
+# ignore venv folder
+venvELECTREfinal
+# .vscode folder
+.vscode
+# output folder
+output
+# __pycache__ folders
+__pycache__
+# rest of files
+autopyexeConfig.json
+
+CMakeLists.*
+
+content/Test.ui.qml
+
+el_py/electre_3/exploitation.py
