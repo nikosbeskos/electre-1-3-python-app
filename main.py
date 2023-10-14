@@ -118,7 +118,7 @@ class Comm(QObject):
 
                 final = self.final_data[2][0]
                 # get svg icon code because matplotlib gets demonized with pyside6
-                svg_code = 2  # TODO: na pairnei to rank me ta onomata apo to electre1 main kai na to stelnei gia na ginei svg sto graph
+                svg_code = 2  # TODO: na pairnei to rank me ta onomata apo to electre1 main kai na to stelnei gia na ginei svg sto graph  # noqa
                 create_table_model_E.update_results_model(
                     models[0], self.final_data, 'superiority', self.existing_model, s_thresh=self.s_thresh, isEl3=False)
                 create_table_model_E.update_results_model(
