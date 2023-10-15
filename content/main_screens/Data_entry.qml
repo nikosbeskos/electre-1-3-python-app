@@ -862,6 +862,7 @@ Item {
         y: 18
         width: 200
         height: 60
+        visible: false
         text: "State: " + item1.state
         anchors.right: text1.left
         font.pixelSize: 35

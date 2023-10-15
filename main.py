@@ -116,11 +116,17 @@ class Comm(QObject):
                 # graph the rank
                 from el_py.electre_3 import graphs  # noqa
 
-                final = self.final_data[2][0]
+                final = self.final_data[2][3]
+
                 # get svg icon code because matplotlib gets demonized with pyside6
-                svg_code = 2  # TODO: na pairnei to rank me ta onomata apo to electre1 main kai na to stelnei gia na ginei svg sto graph  # noqa
+                svg_code = graphs.run_el1(final)
+                self.svg_src.emit(svg_code)
+
+                # superiority
                 create_table_model_E.update_results_model(
                     models[0], self.final_data, 'superiority', self.existing_model, s_thresh=self.s_thresh, isEl3=False)
+
+                # ranking
                 create_table_model_E.update_results_model(
                     models[1], self.final_data, 'ranking', self.existing_model, isEl3=False)
             if self.mode == 'monte':

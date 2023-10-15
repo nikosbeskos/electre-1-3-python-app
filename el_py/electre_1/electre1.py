@@ -147,20 +147,47 @@ def electre_1(class_: hlp.El1_init, weights, s, veto):
 
 
 def get_ranking_names(rank, names):
-    rnk_names = {}
-    for idx, num in enumerate(rank):
-        pass  # TODO:
+    rank = rank.tolist()
+    names = names.tolist()
+
+    # Create a list of (rank, name) tuples
+    ranked_items = list(zip(rank, names))
+
+    # Sort the items first by rank (in ascending order)
+    ranked_items.sort(key=lambda x: x[0])
+
+    # Initialize the preorder list as a list of lists
+    preorder = []
+    current_rank = None
+    group = []
+
+    # Iterate through the sorted items
+    for rank, name in ranked_items:
+        if rank == current_rank:
+            group.append(name)
+        else:
+            if group:
+                # If there's a group of items with the same rank, add them as a list
+                preorder.append(group)
+            group = [name]
+            current_rank = rank
+
+    # Add the last group of items as a list
+    if group:
+        preorder.append(group)
+
+    return preorder
 
 
 def run(class_: hlp.El1_init, shared_list):  # Runs the algorithm and returns the resulted ranks
     x = class_
     shared_list[0] = 0
     rank, phiNet, superior = electre_1(class_=x, weights=x.w, s=x.s, veto=x.v)
-    get_ranking_names(rank, x.altNames)
+    namerank = get_ranking_names(rank, x.altNames)
     for i in range(100):    # pseudo progress for visual purpose
         shared_list[0] = i+1
         # TODO: na mpei to rank me ta onomata k na paei sto return apo katw
-    return np.int32(rank), np.float64(phiNet), superior
+    return np.int32(rank), np.float64(phiNet), superior, namerank
 
 
 def run_r(class_: hlp.El1_init, tolerance, dist):  # Runs the algorithm and returns the resulted ranks with random values generated # noqa

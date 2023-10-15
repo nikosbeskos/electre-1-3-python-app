@@ -16,3 +16,5 @@ content/Test.ui.qml
 el_py/electre_3/exploitation.py
 
 tree.py
+
+data.json

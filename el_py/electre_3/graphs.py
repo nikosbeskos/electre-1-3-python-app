@@ -90,6 +90,27 @@ def create_image(name_ascending_distillation, name_descending_distillation, name
     return svg_content
 
 
+def create_img_el1(name_final_rank, G_final, subplot_height=None):
+    # plot
+
+    # convert the node name variables in dicts
+    labels_final = dict(zip(G_final.nodes(), name_final_rank))
+
+    # create dictionary of node positions for final ranking
+    pos_final = {node: (0, -i) for i, node in enumerate(G_final.nodes())}
+    nx.draw_networkx_nodes(G_final, pos=pos_final, node_size=2000, node_shape='s', node_color='#990b23')
+    nx.draw_networkx_edges(G_final, pos=pos_final)
+    nx.draw_networkx_labels(G_final, pos=pos_final, labels=labels_final, font_size=12)
+    plt.title('Final Ranking', loc='center')
+
+    svg_io = io.StringIO()
+    plt.savefig(svg_io, format='svg')
+    svg_content = svg_io.getvalue()
+    svg_io.close()
+
+    return svg_content
+
+
 def run(ascending_dist, descending_dist, final_rnk):
     name_ascending_distillation, name_descending_distillation, name_final_rank, \
         G_ascending, G_descending, G_final = create_graphs(ascending_dist, descending_dist, final_rnk)
@@ -106,7 +127,11 @@ def run(ascending_dist, descending_dist, final_rnk):
 
 
 def run_el1(final_rnk):
-    pass  # TODO: na pairnei to final rank me onomata kai na to kanei graph kai na to kanei plot kai meta svg inline
+    _, _, name_final_rank, _, _, G_final = create_graphs(['0'], ['0'], final_rnk)
+
+    image_str = create_img_el1(name_final_rank, G_final)
+
+    return image_str
 
 
 # debug

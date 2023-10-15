@@ -170,7 +170,7 @@ Item {
                     id: inner_img
                     width: 1000
                     height: 600
-                    visible: root.isEl3 ? (root.isSimple ? true : false) : false
+                    visible: root.isSimple ? true : false
                     anchors.left: inner_graphs.left
                     anchors.top: inner_graphs.bottom
                     horizontalAlignment: Image.AlignLeft
