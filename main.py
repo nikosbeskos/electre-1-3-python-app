@@ -50,8 +50,6 @@ class Comm(QObject):
         self.x = None
         self.Wthread: QThread = None
         self.worker: backend.BackendWorker = None
-        # self.manager: managers.SyncManager = None
-        # self.shared_list: managers.ListProxy = None
         self.final_data = None
 
     def get_excel_data(self) -> None:
@@ -359,7 +357,6 @@ class Comm(QObject):
             except Exception as ex:
                 print(type(ex))
                 print(ex)
-        # Save data
         app.quit()
 
 
@@ -402,6 +399,7 @@ def debug_handler(msg_type, context, message) -> None:
 sys.path.append('create_table_model_E.py')
 qmlRegisterType(create_table_model_E.CustomTableModel, "myCustomTableModel", 1, 0, "MyCustomTableModel")
 
+# Handler for debug messages
 qInstallMessageHandler(debug_handler)
 
 

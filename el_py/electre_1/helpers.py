@@ -4,9 +4,6 @@
 import numpy as np
 import copy
 from . import load_data as ld
-# import load_data as ld
-
-# Input Data and Definitions for ELECTRE I algorithm
 
 
 class El1_init:
@@ -23,18 +20,8 @@ class El1_init:
         self.tolerance = tolerance
         self.dist = dist        # Distribution index
 
-    # def get_attributes(self):
-    #     self.crit = ld.x.crit   # num of criteria
-    #     self.alt = ld.x.alt     # num of alternatives
-    #     self.altNames = ld.x.altNames       # alternatives names
-    #     self.critNames = ld.x.critNames     # criteria names
-    #     self.decMatrix = ld.x.decMatrix     # Decision Matrix
-    #     self.optType = np.full((1, self.crit), -1)    # Min or Max
-    #     self.w = np.full_like(self.optType, -1, dtype=np.float64)   # Weights
-    #     self.v = np.full_like(self.optType, -1, dtype=np.float64)   # Veto Threshold
 
-
-def input_data():
+def input_data():   # Used with get_input() method
     try:
         x = input()
         return float(x)
@@ -44,7 +31,7 @@ def input_data():
         return float(x)
 
 
-def get_input(class_: El1_init):    # User ipnput data
+def get_input(class_: El1_init):    # User ipnput data from console [not used with GUI]
     x = class_
     for criterion in range(x.crit):
         while True:
@@ -189,7 +176,7 @@ def generate_r_thresh_values(class1: El1_init, class2: El1_init):     # random g
     return y
 
 
-def run(class_: ld.Store_data):  # run with user input
+def run(class_: ld.Store_data):  # run with user input from console [not used with GUI]
     x = class_
     x = El1_init(class_=x)
     get_input(class_=x)

@@ -6,55 +6,6 @@ from PySide6.QtCore import (QAbstractTableModel, QModelIndex,
                             QPersistentModelIndex, Qt, Signal)
 
 
-def write_model(rowsn: list, colsn: list, isEl3: bool = True) -> bool:  # deprecated
-
-    rownames = ['names']
-    colnames = ['names']
-
-    for row, col in zip(rowsn, colsn):
-        rownames.append(row)
-        colnames.append(col)
-
-    rownames.append('Weights')
-    if isEl3:
-        rownames.append('Indifference(q)')
-        rownames.append('Preference(p)')
-
-    rownames.append('Veto')
-
-    with open("content\\main_screens\\RealTableModel_TEMP.qml", "w+", encoding='utf-8') as file:  # noqa
-        file.write("import QtQuick\nimport Qt.labs.qmlmodels\n\nTableModel {\n")  # noqa
-        for _, colname in enumerate(colnames):
-            file.write(f'\tTableModelColumn {{\n\t\tdisplay: "{colname}"\n\t}}\n')  # noqa
-
-        file.write("\n\trows: [{\n")
-
-        for colname in colnames:
-            file.write(f'\t\t\t"{colname}": "{colname}",\n')
-
-        pointer = file.tell()
-        file.seek(pointer-3)
-        file.write("\n")
-        file.truncate()
-
-        for idx, rowname in enumerate(rownames):
-            if idx+1 < len(rownames):
-                file.write('\t\t}, {\n')
-                for colname in colnames:
-                    if colname == rownames[0]:
-                        file.write(f'\t\t\t"{colname}": "{rownames[idx+1]}",\n')  # noqa
-                    else:
-                        file.write(f'\t\t\t"{colname}": "",\n')
-                pointer = file.tell()
-                file.seek(pointer-3)
-                file.write("\n")
-                file.truncate()
-
-        file.write('\t\t}]\n}\n')
-
-    return True
-
-
 class CustomTableModel(QAbstractTableModel):
 
     dataChanged = Signal(QModelIndex, QModelIndex, list)
@@ -183,43 +134,6 @@ class CustomTableModel(QAbstractTableModel):
                 return True
 
         return False
-
-
-def create_model(rowsn: list, colsn: list, isEl3: bool = True) -> QAbstractTableModel:
-
-    rownames = ['names']
-    colnames = ['names']
-
-    for col in colsn:
-        colnames.append(col)
-    for row in rowsn:
-        rownames.append(row)
-
-    rownames.append('Weights')
-    if isEl3:
-        rownames.append('Indifference(q)')
-        rownames.append('Preference(p)')
-
-    rownames.append('Veto')
-
-    data = []
-    temp = []
-
-    for rid, row in enumerate(rownames):
-        for id, col in enumerate(colnames):
-            if rid == 0:
-                temp.append(col)
-            else:
-                if id == 0:
-                    temp.append(row)
-                else:
-                    temp.append('')
-        data.append(deepcopy(temp))
-        temp.clear()
-
-    model = CustomTableModel(data, data[0])
-
-    return model
 
 
 def update_model(rowsn: list, colsn: list, celldata: list, model: CustomTableModel, isEl3: bool = True) -> bool:

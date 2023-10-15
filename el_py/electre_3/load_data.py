@@ -33,7 +33,7 @@ class Store_data:   # Stores the data from the file
     #################################################################
 
 
-def file_input(filepath=None):
+def file_input(filepath=None):      # console usage [not used with GUI]
     file_path = r'your\filepath\to\excelfile.xlsx'
     filepath = file_path
     check = input(f'Is this the file(default file) you want to load? |file: {filepath} |y/n\n')     # noqa
@@ -72,7 +72,7 @@ def file_input(filepath=None):
     return filepath
 
 
-def load_data(class_: Store_data, ismanual: bool, path=None):       # noqa loads data from file_path, cleans it, and dumps it in Store_data
+def load_data(class_: Store_data, ismanual: bool, path=None):       # loads data from file_path, cleans it, and dumps it in Store_data # noqa
 
     x = class_
     if ismanual:
@@ -108,7 +108,7 @@ def load_data(class_: Store_data, ismanual: bool, path=None):       # noqa loads
     return x
 
 
-def run():
+def run():      # console usage [not used with GUI]
     x = Store_data()
     x = load_data(x, ismanual=True)
     return x

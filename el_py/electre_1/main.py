@@ -1,7 +1,6 @@
 import numpy as np
 import pickle
 from . import electre1
-# import electre1
 
 
 def initialize(data):
@@ -59,17 +58,6 @@ def initialize(data):
             'Do not leave the cells empty.')
 
     return x
-    # desision_makers = int(input('How many desision makers are running the ELECTRE I algorithm?\n'))
-    # results_rank = np.full((desision_makers, alt), 0)
-    # phi_net = np.full_like(a=results_rank, fill_value=0, dtype=np.float64)
-
-    # for desisionMaker in range(desision_makers):
-    #     print(f'Process starts for desision maker {desisionMaker + 1}.')
-    #     results_rank[desisionMaker, :], phi_net[desisionMaker, :] = electre1.run()
-
-    # for maker in range(desision_makers):
-    #     print(
-    #         f'Desision maker {maker + 1} results: |Φ rank|: {results_rank[maker]} |Φnet|: {phi_net[maker]}')
 
 
 def run_auto(shared_list, data):

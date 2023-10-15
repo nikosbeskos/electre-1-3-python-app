@@ -16,7 +16,6 @@ def analysis(alt, iter_num, results):
     return expected_rank, rank_acceptability
 
 
-# TODO: na vgoun ta asc kai desc preorders apo tin analysi tou acceptability index gt aloionoun to apotelesma
 def run(results_fin):
     results = np.array(results_fin)
     alt = int(np.shape(a=results)[1])

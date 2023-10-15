@@ -34,11 +34,6 @@ def electre_3(class_: hlp.El3_init, weights, q_indiff, preference, veto):
     p_norm = np.true_divide(p, normFactor)
     v_norm = np.true_divide(v, normFactor)
 
-    # normDM = decMatrix
-    # q_norm = q
-    # p_norm = p
-    # v_norm = v
-
     # Step 2: Normalized Subtraction Matrix
 
     diffMatr = np.zeros((alt*crit, alt))
@@ -151,37 +146,6 @@ def electre_3(class_: hlp.El3_init, weights, q_indiff, preference, veto):
             credDeg[row, column] = concordIndex[row, column] * temp
             temp = 1
 
-    # # Φnet
-    # phiPlus = np.sum(credDeg, 1)
-    # phiMinus = np.sum(credDeg, 0)
-    # phiNet = np.subtract(phiPlus, phiMinus, dtype=np.float64)
-
-    # rank_phi = rankdata([-1*i for i in phiNet], method='dense')
-
-    # # Step 7: asafis sxesi kiriarxias
-
-    # dDij = np.zeros_like(credDeg)
-    # checkMatrix = np.full_like(dDij, -1)
-
-    # for row in range(alt):
-    #     for column in range(alt):
-    #         dDij[row, column] = credDeg[row, column]-credDeg[column, row]
-
-    # for row in range(alt):
-    #     for column in range(alt):
-    #         if dDij[row, column] >= 0:
-    #             checkMatrix[row, column] = dDij[row, column]
-    #         else:
-    #             checkMatrix[row, column] = 0
-
-    # # Step 8: asafis sxesi mi kiriarxias
-
-    # dNDij = 1-checkMatrix
-    # mND = np.min(dNDij, 0)
-    # rank_desc = rankdata([-1*i for i in mND], method="dense")
-
-    # # Return ranks
-    # return np.int32(rank_phi), np.int32(rank_desc), np.float64(phiNet)
     return credDeg
 
 

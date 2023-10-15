@@ -5,8 +5,6 @@ import numpy as np
 import copy
 from . import load_data as ld
 
-# Input Data and Definitions for ELECTRE III algorithm
-
 
 class El3_init:
     def __init__(self, class_: ld.Store_data, tolerance=None, dist=None) -> None:
@@ -23,20 +21,8 @@ class El3_init:
         self.tolerance = tolerance
         self.dist = dist
 
-    # def get_attributes(self):
-    #     self.crit = ld.x.crit   # num of criteria
-    #     self.alt = ld.x.alt     # num of alternatives
-    #     self.altNames = ld.x.altNames       # alternatives names
-    #     self.critNames = ld.x.critNames     # criteria names
-    #     self.decMatrix = ld.x.decMatrix     # Decision Matrix
-    #     self.optType = np.full((1, self.crit), -1)    # Min or Max
-    #     self.w = np.full_like(self.optType, -1, dtype=np.float64)   # Weights
-    #     self.q = np.full_like(self.optType, -1, dtype=np.float64)   # Indifference Threshold
-    #     self.p = np.full_like(self.optType, -1, dtype=np.float64)   # Preference Threshold
-    #     self.v = np.full_like(self.optType, -1, dtype=np.float64)   # Veto Threshold
 
-
-def input_data():
+def input_data():   # Used with get_input() method
     try:
         x = input()
         return float(x)
@@ -46,7 +32,7 @@ def input_data():
         return float(x)
 
 
-def get_input(class_: El3_init):    # User ipnput data
+def get_input(class_: El3_init):    # User ipnput data from console [not used with GUI]
     x = class_
     for criterion in range(x.crit):
         while True:
@@ -306,7 +292,7 @@ def generate_r_thresh_values(class_1: El3_init, class_2: El3_init):     # random
     return y
 
 
-def run(class_: ld.Store_data):  # run with user input
+def run(class_: ld.Store_data):  # run with user input from console [not used with GUI]
     x = class_
     x = El3_init(class_=x)
     x = get_input(class_=x)

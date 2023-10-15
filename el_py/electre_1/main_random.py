@@ -12,7 +12,7 @@ from . import analysis as an
 termination_Event = multiprocessing.Event()
 
 
-def initialize():   # for debug only
+def initialize():   # for console input [not used with GUI]
     print('\n\nELECTRE I algorithm with random numbers generator strarted.\n')
 
     # Load files from .xlsx file
@@ -64,17 +64,11 @@ def initialize():   # for debug only
         print(f'Desision maker {maker + 1} results phi rank: {results_phi[maker]}')
         index_values[0, maker] = f'Desision maker {maker+1}'
 
-    # rank acceptability matrix: m*n matrix containing the results
-    # m= number of loops, n=2*alt (first half is for phi ranking and second half for desc ranking)
-    # expected rank: mean of each alternatives score for all loops
     expexted_rank, rank_acceptability = an.run(
         results_phi=results_phi, index_values=index_values)
 
     print(f'\n\nRank acceptabilty matrix (Φ):\n{rank_acceptability[:,:alt]*100}\n')
     print(f'expected ranks (Φ):\n{expexted_rank[:alt]}\n')
-
-    # phi net (expected)
-    #
 
 
 def initialize_auto(data):
@@ -151,7 +145,7 @@ def initialize_auto(data):
     return x, tolerance, distribution, iternum
 
 
-# multiprocessing for faster compytation
+# using multiprocessing for better and faster performance in a large number of iterations (e.g. 10000)
 def run_iteration(args):    # one iteration block
     iter_num, class_, tolerance, dist = args
     temp = list(electre1.run_r(class_=class_, tolerance=tolerance, dist=dist))

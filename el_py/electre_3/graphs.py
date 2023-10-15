@@ -7,6 +7,7 @@ matplotlib.use('svg')
 
 
 def create_graphs(ascending_distillation, descending_distillation, final_rank):
+    # debug values
     # ascending_distillation = [['A1'], ['A2'], ['A3', 'A4'], ['A5', 'A6']]
     # descending_distillation = [['A1'], ['A2', 'A3'], ['A4'], ['A5'], ['A6']]
     # final_rank = []
@@ -44,6 +45,7 @@ def create_graphs(ascending_distillation, descending_distillation, final_rank):
 
 def create_image(name_ascending_distillation, name_descending_distillation, name_final_rank,
                  G_ascending, G_descending, G_final, subplot_height):
+
     # displaying the graphs
     fig, axs = plt.subplots(1, 3, figsize=(8, subplot_height))
     plt.subplots_adjust(
@@ -82,6 +84,7 @@ def create_image(name_ascending_distillation, name_descending_distillation, name
     nx.draw_networkx_edges(G_final, pos=pos_final, ax=axs[2])
     nx.draw_networkx_labels(G_final, pos=pos_final, labels=labels_final, font_size=12, ax=axs[2])
 
+    # create a "file-like" str to write the svg code directly to it
     svg_io = io.StringIO()
     plt.savefig(svg_io, format='svg')
     svg_content = svg_io.getvalue()
@@ -90,11 +93,13 @@ def create_image(name_ascending_distillation, name_descending_distillation, name
     return svg_content
 
 
-def create_img_el1(name_final_rank, G_final, subplot_height=None):
-    # plot
+def create_img_el1(name_final_rank, G_final, plot_height=None):
 
     # convert the node name variables in dicts
     labels_final = dict(zip(G_final.nodes(), name_final_rank))
+
+    if plot_height is not None:
+        fig, ax = plt.subplots(figsize=(3, plot_height))
 
     # create dictionary of node positions for final ranking
     pos_final = {node: (0, -i) for i, node in enumerate(G_final.nodes())}
@@ -103,6 +108,7 @@ def create_img_el1(name_final_rank, G_final, subplot_height=None):
     nx.draw_networkx_labels(G_final, pos=pos_final, labels=labels_final, font_size=12)
     plt.title('Final Ranking', loc='center')
 
+    # create a "file-like" str to write the svg code directly to it
     svg_io = io.StringIO()
     plt.savefig(svg_io, format='svg')
     svg_content = svg_io.getvalue()
@@ -121,22 +127,24 @@ def run(ascending_dist, descending_dist, final_rnk):
     image_str = create_image(name_ascending_distillation, name_descending_distillation, name_final_rank, G_ascending,
                              G_descending, G_final, subplot_height)
 
-    # plt.savefig('testSVG.svg', format='svg')
-
     return image_str
 
 
 def run_el1(final_rnk):
     _, _, name_final_rank, _, _, G_final = create_graphs(['0'], ['0'], final_rnk)
 
-    image_str = create_img_el1(name_final_rank, G_final)
+    plot_height = 5 + 0.5 * (G_final.number_of_nodes() - 1)
+
+    image_str = create_img_el1(name_final_rank, G_final, plot_height)
 
     return image_str
 
 
 # debug
 # if __name__ == '__main__':
-#     ascending_distillation = [['A1'], ['A2'], ['A3', 'A4'], ['A5', 'A6']]
-#     descending_distillation = [['A1'], ['A2', 'A3'], ['A4'], ['A5'], ['A6']]
-#     final_rank = [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6']]
-#     run(ascending_distillation, descending_distillation, final_rank)
+    #     ascending_distillation = [['A1'], ['A2'], ['A3', 'A4'], ['A5', 'A6']]
+    #     descending_distillation = [['A1'], ['A2', 'A3'], ['A4'], ['A5'], ['A6']]
+    #     final_rank = [['A2'], ['A4', 'A5'], ['A6'], ['A1'], ['A3']]  # [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6']] # noqa
+    #     run(ascending_distillation, descending_distillation, final_rank)
+    #     with open('testIMG.svg', 'w') as img:
+    #       img.write(run_el1(final_rank))

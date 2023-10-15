@@ -59,11 +59,11 @@ class BackendWorker(QObject):
             self.process.join()
             if self.process in self.running:
                 self.running.remove(self.process)
-            if type(ex) == ValueError:
+            if type(ex) == ValueError:      # noqa
                 self.error.emit(str(ex), self.running)
                 print('FROM BACKEND RUN')
                 raise ValueError(ex)
-            elif type(ex) == TypeError:
+            elif type(ex) == TypeError:     # noqa
                 self.error.emit(ex, self.running)
                 raise TypeError(ex)
             else:

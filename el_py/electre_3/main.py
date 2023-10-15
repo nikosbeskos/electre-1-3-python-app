@@ -66,36 +66,6 @@ def initialize(data):
 
     return x
 
-    '''
-    # desision_makers = 1  # int(input('How many desision makers are running the ELECTRE III algorithm?\n'))
-    # results_final = np.full((desision_makers, alt), 0)
-    # results_desc = np.full((desision_makers, alt), 0)
-    # results_asc = np.full_like(a=results_final, fill_value=0, dtype=np.int32)
-    # descending_distil = []
-    # ascending_distil = []
-    # final_preorder = []
-
-    # for desisionMaker in range(desision_makers):
-    #     print(f'Process starts for desision maker {desisionMaker + 1}.')
-    #     (results_final[desisionMaker, :], results_desc[desisionMaker, :], results_asc[desisionMaker, :],
-    #      desc_distil, asc_distil, f_preorder) = electre3.run()
-    #     descending_distil.append(desc_distil)
-    #     ascending_distil.append(asc_distil)
-    #     final_preorder.append(f_preorder)
-
-    # for maker in range(desision_makers):
-    #     print(
-    #         f'Desision maker {maker + 1} results: |descending preorder|: {descending_distil[maker]} '
-    #         + f'|ascendng preorder|: {ascending_distil[maker]}'
-    #         + f'   results: |final rank|: {final_preorder[maker]}, |ranking|: {electre3.hlp.x.altNames} => {results_final}')  # noqa
-
-    # temp = exploitation.run(credibility_mtrx=electre3.hlp.ld.x.decMatrix)
-    # df_phi = pd.DataFrame(results_phi)
-    # df_desc = pd.DataFrame(results_desc)
-    # df = pd.merge(df_phi, df_desc, how='outer', left_index=True, right_index=True, suffixes=("_Φ", "_desc"))
-    # print(df)
-    '''
-
 
 def run_auto(shared_list, data):
     data = pickle.loads(data)

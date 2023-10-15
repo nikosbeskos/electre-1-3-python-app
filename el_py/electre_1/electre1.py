@@ -186,7 +186,7 @@ def run(class_: hlp.El1_init, shared_list):  # Runs the algorithm and returns th
     namerank = get_ranking_names(rank, x.altNames)
     for i in range(100):    # pseudo progress for visual purpose
         shared_list[0] = i+1
-        # TODO: na mpei to rank me ta onomata k na paei sto return apo katw
+
     return np.int32(rank), np.float64(phiNet), superior, namerank
 
 
@@ -195,22 +195,3 @@ def run_r(class_: hlp.El1_init, tolerance, dist):  # Runs the algorithm and retu
     y = hlp.run_r(class_=x, tolerance=tolerance, dist=dist)
     rank, phiNet, superior = electre_1(class_=x, weights=y.w, s=y.s, veto=y.v)
     return np.int32(rank), np.float64(phiNet)
-
-# debug
-
-
-# if __name__ == '__main__':
-#     excelfilepath = "el_py\\Book_electre1.xlsx"
-#     x = hlp.ld.run_auto(excelfilepath)
-#     s_thresh = 0.79
-#     import json
-#     with open("output\\data.json", "r") as file:
-#         json_data = file.readlines()
-#     alldata = json.loads(json_data[0])
-#     from main import initialize
-#     data = [excelfilepath, x, s_thresh, alldata]
-#     x = initialize(data)
-#     shared_list = [0, "end"]
-#     results = run(x, shared_list)
-#     print("debug")
-#     print("debug")

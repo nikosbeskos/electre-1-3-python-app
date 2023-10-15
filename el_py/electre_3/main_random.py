@@ -13,7 +13,7 @@ from . import electre3
 termination_Event = multiprocessing.Event()
 
 
-def intitialize():  # for debug only. # get required initial values, load data form ecxel etc.
+def intitialize():  # get required initial values, load data form ecxel etc. For console input [not used with GUI]     # noqa
     print('\n\nELECTRE III algorithm with random numbers generator strarted.\n')
 
     # Load files from .xlsx file
@@ -126,15 +126,6 @@ def intitialize_auto(data):
             'Do not leave the cells empty.')
 
     return x, tolerance, distribution, iternum
-
-
-# INFO:
-# rank acceptability matrix: m*n matrix containing the results (final ranking only)
-# m= number of loops, n=alt
-# expected rank: mean of each alternatives score for all loops
-
-# phi net (expected)
-#
 
 
 # using multiprocessing for better and faster performance in a large number of iterations (e.g. 10000)
