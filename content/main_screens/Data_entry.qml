@@ -447,7 +447,6 @@ Item {
                 }
 
                 onTextChanged: {
-                    //FIXME
                     function isValid() {
                         var text = textInput2.text
                         var num = parseFloat(text)

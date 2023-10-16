@@ -71,7 +71,6 @@ Item {
         padding: 2
         font.family: "Nunito"
 
-        //focus: (text1.visible && text1.enabled) ? true : false
         Keys.onTabPressed: {
             var row = model.row
             var column = model.column
@@ -192,50 +191,21 @@ Item {
         text: display
         elide: Text.ElideRight
 
-        //            function () {
-        //            var row = model.row
-        //            var column = model.column
-        //            var idx = view.model.index(row, column)
-        //            var data = view.model.data(idx, "display")
-        //            return data
-        //        }
         anchors.fill: parent
         font.pixelSize: 12
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        //        echoMode: TextInput.Normal
         clip: true
         enabled: !root.showLabel
-        //        selectByMouse: true
-        //        maximumLength: 120
-        //        selectionColor: "#57b9fc"
         padding: 2
         font.family: "Nunito"
 
-        //        onAccepted: {
-        //            var row = model.row
-        //            var column = model.column
-        //            var idx = view.model.index(row, column)
 
-        //            view.model.setData(idx, textInput.text)
-
-        //            textInput.text = view.model.data(view.model.index(model.row,
-        //                                                              model.column))
-        //        }
-        onTextChanged: {
-
-            //            textInput.accepted()
-        }
 
         Component.onCompleted: {
-            //            textInput.clear()
             textInput.text = display
-            //            old line: textInput.text = view.model.data(view.model.index(model.row,
-            //                                       model.column),
-            //                                       "display")
-
-            //            textInput.editingFinished()
         }
+
         Keys.onTabPressed: {
             var row = model.row
             var column = model.column
@@ -344,12 +314,6 @@ Item {
                 var idx = view.model.index(row, column)
                 var data = view.model.data(idx, "display")
 
-                //                if (selected && current) {
-                //                    var pos = textInput.positionAt(
-                //                                mouseX, mouseY,
-                //                                TextInput.CursorBetweenCharacters)
-                //                    textInput.cursorPosition = pos
-                //                }
                 view.selectionModel.setCurrentIndex(
                             idx, ItemSelectionModel.SelectCurrent)
 
@@ -371,7 +335,6 @@ Item {
             }
 
             onDoubleClicked: {
-                //                textInput.selectWord()
                 textInput.focus = true
                 view.tabpressed = false
                 view.returnpressed = false
@@ -397,7 +360,7 @@ Item {
                 view.forceLayout()
                 textInput.forceActiveFocus()
                 textInput.focus = true
-                //                textInput.cursorPosition = textInput.length
+
             } else if (text1.enabled && text1.visible) {
                 if (root.selected && root.current) {
                     root.state = "selected"

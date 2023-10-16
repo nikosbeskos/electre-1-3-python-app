@@ -71,7 +71,6 @@ Item {
         padding: 2
         font.family: "Nunito"
 
-        //        focus: (text1.visible && text1.enabled) ? true : false
         Keys.onTabPressed: {
             var row = model.row
             var column = model.column
@@ -230,8 +229,6 @@ Item {
             textInput.clear()
             textInput.text = display
 
-            //          old line: textInput.text  view.model.data(view.model.index(model.row, model.column),
-            //                            "display")
             textInput.editingFinished()
         }
         Keys.onTabPressed: {
@@ -472,9 +469,5 @@ Item {
     ]
 }
 
-/*##^##
-Designer {
-    D{i:0}D{i:11;transitionDuration:2000}
-}
-##^##*/
+
 

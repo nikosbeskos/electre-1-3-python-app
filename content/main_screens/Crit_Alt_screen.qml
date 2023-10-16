@@ -273,7 +273,6 @@ Item {
                 }
 
                 Import_excel {
-                    // TODO: NOTE: connect to python load excel file
                     id: import_excel
                     width: 60
                     height: 60
@@ -696,39 +695,7 @@ Item {
                                 }
                             }
 
-                            //                            // workaround for qt not being able to handle signals directly from python
-                            //                            signal reemit(variant rown, variant coln)
 
-                            //                            // connect the python signal to the "reemit" signal, like a repeater concept
-                            //                            Component.onCompleted: comm.ExcelReadDataSignal.connect(
-                            //                                                       reemit)
-
-                            //                            onReemit: {
-                            //                                console.log("REEMIT")
-                            //                                var rownames = rown
-                            //                                var colnames = coln
-                            //                                var colcount = colnames.length
-                            //                                var rowcount = rownames.length
-
-                            //                                for (var i = 0; i < colcount; i++) {
-                            //                                    table_like_list_view_crit.model.set(i, {
-                            //                                                                            "criteriaName": colnames[i],
-                            //                                                                            "optimizationType": "Maximize"
-                            //                                                                        })
-                            //                                }
-                            //                                for (i = 0; i < rowcount; i++) {
-                            //                                    table_like_list_view_alt.model.set(i, {
-                            //                                                                           "id_m": (i + 1),
-                            //                                                                           "alternativeName": rownames[i]
-                            //                                                                       })
-                            //                                }
-
-                            //                                spinBox_Alt.value = rowcount
-                            //                                spinBox_Crit.value = colcount
-
-                            //                                spinBox_Alt.valueModified()
-                            //                                spinBox_Crit.valueModified()
-                            //                            }
                         }
 
                         Custom_btn_1 {

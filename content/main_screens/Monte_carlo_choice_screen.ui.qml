@@ -40,20 +40,12 @@ Item {
             id: left_area
             Layout.preferredHeight: parent.height
             Layout.preferredWidth: parent.width / 2
-            //            anchors.left: parent.left
-            //            anchors.right: parent.right
-            //            anchors.top: parent.top
-            //            anchors.bottom: parent.bottom
             Layout.alignment: Qt.AlignLeft | Qt.AlignTop
             Layout.maximumHeight: 1080
             Layout.minimumHeight: 420
             Layout.minimumWidth: 485
             Layout.maximumWidth: 960
 
-            //            anchors.rightMargin: parent.width / 2
-            //            anchors.leftMargin: 0
-            //            anchors.bottomMargin: 0
-            //            anchors.topMargin: 0
             Label {
                 id: header
                 x: 200
@@ -213,19 +205,11 @@ Item {
             Layout.preferredHeight: parent.height
             Layout.preferredWidth: parent.width / 2
             Layout.alignment: Qt.AlignLeft | Qt.AlignTop
-            //            anchors.left: parent.left
-            //            anchors.right: parent.right
-            //            anchors.top: parent.top
-            //            anchors.bottom: parent.bottom
-            //            anchors.leftMargin: parent.width / 2
             Layout.minimumWidth: 485
             Layout.minimumHeight: 420
             Layout.maximumWidth: 960
             Layout.maximumHeight: 1080
 
-            //            anchors.bottomMargin: 0
-            //            anchors.topMargin: 0
-            //            anchors.rightMargin: 0
             Item {
                 id: dumpb_spcer_item
                 width: 200
@@ -621,10 +605,3 @@ Item {
         }
     ]
 }
-
-/*##^##
-Designer {
-    D{i:0}D{i:66;transitionDuration:2000}
-}
-##^##*/
-

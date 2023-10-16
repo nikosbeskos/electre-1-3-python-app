@@ -57,5 +57,4 @@ ListView {
                            "optimizationType": "Maximize"
                        })
     }
-    //    Component.onCompleted: initialize()
 }

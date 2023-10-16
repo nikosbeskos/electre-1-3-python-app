@@ -28,9 +28,6 @@ Item {
             id: left_area
             width: parent.width / 2
             height: parent.height
-            //anchors.left: parent.left
-            //            anchors.top: parent.top
-            //            anchors.bottom: parent.bottom
             Layout.preferredHeight: parent.height
             Layout.preferredWidth: parent.width / 2
             Layout.minimumHeight: 650
@@ -38,9 +35,7 @@ Item {
             Layout.maximumHeight: 1080
             Layout.maximumWidth: 1920
             Layout.fillHeight: false
-            //            anchors.leftMargin: 30
-            //            anchors.bottomMargin: 0
-            //            anchors.topMargin: 0
+
             Item {
                 id: container
                 width: 500
@@ -140,18 +135,10 @@ Item {
             id: right_area
             width: parent.width / 2
             height: parent.height
-            //            anchors.left: parent.left
-            //            anchors.right: parent.right
-            //            anchors.top: parent.top
-            //            anchors.bottom: parent.bottom
             Layout.preferredHeight: parent.height
             Layout.maximumHeight: 1080
             Layout.maximumWidth: 1920
             Layout.preferredWidth: parent.width / 2
-            //            anchors.leftMargin: parent.width / 2
-            //            anchors.rightMargin: 0
-            //            anchors.topMargin: 0
-            //            anchors.bottomMargin: 0
             smooth: false
 
             Image {
@@ -287,10 +274,3 @@ Item {
         }
     ]
 }
-
-/*##^##
-Designer {
-    D{i:0}D{i:30;transitionDuration:2000}
-}
-##^##*/
-

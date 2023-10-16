@@ -161,17 +161,6 @@ Item {
                     }
                 }
 
-                //                signal reemitBackendFinnished
-
-                //                Component.onCompleted: {
-                //                    comm.backend_finished.connect(reemitBackendFinnished)
-                //                }
-
-                //                onReemitBackendFinnished: {
-                //                    if (loading_screen.progressBar.value === 100) {
-                //                        stackView.push(results_screen)
-                //                    }
-                //                }
             }
 
             Data_entry {
@@ -207,13 +196,7 @@ Item {
                         for (i = 0; i < altData.length; i++) {
                             dataA.push(altData[i][1])
                         }
-                        //                        console.log("RECIEVED DATA FOR TABLE [MAINAPP]")
 
-                        //                        console.log("TYPE OF COLS:\t" + typeof eL1_data_entry.table.cols)
-                        //                        console.log("TYPE OF ROWNUM:\t" + typeof eL1_data_entry.table.rownum)
-                        //                        console.log("TYPE OF dataC:\t" + typeof dataC)
-                        //                        console.log("TYPE OF dataA:\t" + typeof dataA)
-                        //                        console.log("dataC: " + dataC + " dataA: " + dataA)
                         data_to_table.rowColData(dataA, dataC) // emit to python
                     }
                 }

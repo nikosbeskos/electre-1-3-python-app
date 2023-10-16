@@ -10,7 +10,6 @@ Item {
 
     TableView {
         id: view
-        //        objectName: "TableView"
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.top: parent.top
@@ -46,7 +45,6 @@ Item {
 
         model: MyCustomTableModel {
             id: model
-            //            objectName: "model"
         }
 
         delegate: Table_customDelegate_DisplayOnly {
@@ -55,12 +53,6 @@ Item {
             height: 30
         }
 
-        //        onModelChanged: {
-        //            if (view.model.index(1, 1).row() === 1 && view.model.index(
-        //                        1, 1).column() === 1) {
-        //                console.log("MODEL WAS RESET !!!")
-        //            }
-        //        }
     }
 
     HorizontalHeaderView {

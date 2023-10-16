@@ -50,7 +50,6 @@ Item {
 
         onTriggered: {
             if (item1.count === 0) {
-                //                item1.count += 1
                 item1.start_python_process()
                 item1.state = "progress"
             }
@@ -146,7 +145,7 @@ Item {
                 if (diff !== 7.5) {
                     percentSymbol.margNum = newmarg
                     percentSymbol.diffcount = 0
-                    //console.log("DIFF PX SIZE: " + diff)
+
                 } else {
                     percentSymbol.diffcount += 1
                     if (percentSymbol.diffcount > 10) {
@@ -250,35 +249,7 @@ Item {
             percentage.text = num.toString()
         }
     }
-    // workaround for qt not being able to handle signals directly from python
-    //    signal reemitError(string err)
-    //    signal reemitPROG(double num)
-
-    //    // connect the python signal to the "reemit" signal, like a repeater concept
-    //    Component.onCompleted: {
-    //        comm.Error.connect(reemitError)
-    //        comm.progress.connect(reemitPROG)
-    //    }
-
-    //    onReemitError: {
-    //        label.visible = false
-    //        error_text.text = err
-    //        animation.restart()
-    //        error_text.visible = true
-    //        console.log("ValueError. " + err)
-    //        busyIndicator.running = false
-    //        item1.count = 0
-    //    }
-
-    //    onReemitPROG: {
-    //        progressBar.value = num
-    //        percentage.text = num.toString()
-    //    }
 }
 
-/*##^##
-Designer {
-    D{i:0}D{i:15;transitionDuration:2000}
-}
-##^##*/
+
 
