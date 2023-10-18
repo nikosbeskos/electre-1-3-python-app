@@ -972,8 +972,7 @@ BSD-3-Clause-Clear
 
 <details>
 <summary>License text</summary>
-<details>
-<summary>BSD-3-Clause-Clear</summary>
+
 
 ```
 Copyright (c) 2015 Thomson Licensing, SAS
@@ -984,9 +983,6 @@ Redistribution and use in source and binary forms, with or without modification,
       * Neither the name of [Owner Organization] nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
-
-
-</details>
 
 </details>
 
@@ -1068,7 +1064,7 @@ License: Zlib
 Apache-2.0, MIT, Zlib, BSL-1.0, bsd-2-clause-views, bsd-3-clause-open-mpi, GPL-3.0-with-GCC-exception, GPL-3.0-or-later, GPL-3.0-only, GPL-1.0-or-later, NCSA, BSD-2-Clause, CC0-1.0, OPL-1.0, SunPro
 
 <details>
-<summary>License text</summary>
+<summary>Licenses text</summary>
 
 <details>
 <summary>Apache-2.0</summary>
@@ -1540,7 +1536,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 MIT, BSD-3-Clause, Apache-2.0, BSD-2-Clause, Python-2.0, mit-nagy
 
 <details>
-<summary>License text</summary>
+<summary>Licenses text</summary>
 <details>
 <summary>MIT</summary>
 
@@ -1717,8 +1713,9 @@ There is no warranty.
 
 
 #### Declared Licenses
-LGPL-3.0-only
+LGPL-3.0
 
+<details><summary>License text</summary>
 
 ```
 GNU LESSER GENERAL PUBLIC LICENSE
@@ -1788,22 +1785,7 @@ Each version is given a distinguishing version number. If the Library as you rec
 If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy's public statement of acceptance of any version is permanent authorization for you to choose that version for the Library.
 ```
 
-
-
-
-
-
-#### Other Licenses
-
-
-
-
-
-
-
-
-
-
+</details>
 
 
 
@@ -1813,11 +1795,49 @@ If the Library as you received it specifies that a proxy can decide whether futu
 
 
 #### Declared Licenses
+BSD-3-Clause
 
+<details><summary>License text</summary>
 
+```
+Copyright (c) 2001-2002 Enthought, Inc. 2003-2023, SciPy Developers.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above
+   copyright notice, this list of conditions and the following
+   disclaimer in the documentation and/or other materials provided
+   with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
+
+</details>
 
 #### Other Licenses
-**Multi-license:**BSD-3-Clause *OR* GPL-1.0-or-later *OR* GPL-3.0-only *OR* GPL-3.0-or-later *OR* GPL-3.0-with-GCC-exception, **Multi-license:**BSD-3-Clause *OR* BSD-3-Clause-LBNL *OR* MIT *OR* Qhull, BSD-3-Clause, MIT, BSD-2-Clause, Qhull, BSL-1.0
+**Multi-license:** BSD-3-Clause *OR* GPL-1.0-or-later *OR* GPL-3.0-only *OR* GPL-3.0-or-later *OR* GPL-3.0-with-GCC-exception, **Multi-license:** BSD-3-Clause *OR* BSD-3-Clause-LBNL *OR* MIT *OR* Qhull, BSD-3-Clause, MIT, BSD-2-Clause, Qhull, BSL-1.0
+
+<details><summary>Licenses text</summary>
 
 
 
@@ -2737,11 +2757,6 @@ Public License instead of this License.  But first, please read
 
 
 
-
-
-
-
-
 ```
 Copyright (c) 2001-2002 Enthought, Inc.  2003-2019, SciPy Developers.
 All rights reserved.
@@ -3658,10 +3673,6 @@ Public License instead of this License.  But first, please read
 
 
 
-
-
-
-
 ```
 Copyright (c) 2001-2002 Enthought, Inc.  2003-2019, SciPy Developers.
 All rights reserved.
@@ -4575,9 +4586,6 @@ Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
 
 ```
-
-
-
 
 
 
@@ -4601,9 +4609,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-
-
 
 
 
@@ -4635,9 +4640,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 
-
-
-
 ```
 Qhull, Copyright (c) 1993-2003
 The National Science and Technology Research Center for Computation and Visualization of Geometric Structures (The Geometry Center) University of Minnesota
@@ -4652,9 +4654,6 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
 
 
 
-
-
-
 ```
 Permission is hereby granted, free of charge, to any person or organization obtaining a copy of the software and accompanying documentation covered by this license (the "Software") to use, reproduce, display, distribute, execute, and transmit the Software, and to prepare derivative works of the Software, and to permit third-parties to whom the Software is furnished to do so, all subject to the following:
 The copyright notices in the Software and this entire statement, including the above license grant, this restriction and the following disclaimer, must be included in all copies of the Software, in whole or in part, and all derivative works of the Software, unless such copies or derivative works are solely in the form of machine-executable object code generated by a source language processor.
@@ -4662,17 +4661,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
+</details>
 
 
 
@@ -4684,6 +4673,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #### Declared Licenses
 MPL-2.0, MIT
 
+<details><summary>Licenses text</summary>
+<details><summary>MPL-2.0</summary>
 
 ```
 1\. Definitions
@@ -4764,10 +4755,9 @@ MPL-2.0, MIT
       If You choose to distribute Source Code Form that is Incompatible With Secondary Licenses under the terms of this version of the License, the notice described in Exhibit B of this License must be attached.
 ```
 
+</details>
 
-
-
-
+<details><summary>MIT</summary>
 
 ```
 `tqdm` is a product of collaborative work.
@@ -4822,15 +4812,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ```
 
-
-
-
-
-
-#### Other Licenses
-
-
-
+</details></details>
 
 
 
@@ -4842,9 +4824,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ---
-
-
-
 
 ---
 
@@ -4852,6 +4831,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ### MIT
+<details>
 
 ```
 
@@ -4887,8 +4867,11 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 ```
 
+</details>
 
 ### CC0-1.0
+
+<details>
 
 ```
 # CC0 1.0 Universal
@@ -5002,16 +4985,22 @@ http://creativecommons.org/publicdomain/zero/1.0/.
 
 ```
 
+</details>
 
 ### APAFML
+
+<details>
 
 ```
 Copyright (c) 1985, 1987, 1989, 1990, 1991, 1992, 1993, 1997 Adobe Systems Incorporated. All Rights Reserved.
 This file and the 14 PostScript(R) AFM files it accompanies may be used, copied, and distributed for any purpose and without charge, with or without modification, provided that all copyright notices are retained; that the AFM files are not distributed without this file; that all modifications to this file or any of the AFM files are prominently noted in the modified file(s); and that this paragraph is not modified. Adobe Systems has no responsibility or obligation to support the use of the AFM files.
 ```
 
+</details>
 
 ### Apache-2.0
+
+<details>
 
 ```
 Apache License
@@ -5065,8 +5054,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+</details>
 
 ### GPL-1.0-or-later
+
+<details>
 
 ```
 Apache-Style Software License for ColorBrewer Color Schemes
@@ -5110,8 +5102,11 @@ POSSIBILITY OF SUCH DAMAGE.
 
 ```
 
+</details>
 
 ### BSD-3-Clause
+
+<details>
 
 ```
 BSD 3-Clause License
@@ -5148,8 +5143,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ```
 
+</details>
 
 ### BSD-2-Clause
+
+<details>
 
 ```
 Copyright (c) &lt;year&gt; &lt;owner&gt;
@@ -5178,8 +5176,11 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
+</details>
 
 ### BSD-3-Clause-Clear
+
+<details>
 
 ```
 The Clear BSD License
@@ -5192,8 +5193,11 @@ Redistribution and use in source and binary forms, with or without modification,
 NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
+</details>
 
 ### BSD-3-Clause-LBNL
+
+<details>
 
 ```
 Copyright (c) 2003, The Regents of the University of California, through Lawrence Berkeley National Laboratory (subject to receipt of any required approvals from the U.S. Dept. of Energy). All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -5205,8 +5209,11 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 You are under no obligation whatsoever to provide any bug fixes, patches, or upgrades to the features, functionality or performance of the source code (&quot;Enhancements&quot;) to anyone; however, if you choose to make your Enhancements available either publicly, or directly to Lawrence Berkeley National Laboratory, without imposing a separate written license agreement for such Enhancements, then you hereby grant the following license: a non-exclusive, royalty-free perpetual license to install, use, modify, prepare derivative works, incorporate into other computer software, distribute, and sublicense such Enhancements or derivative works thereof, in binary and source code form.
 ```
 
+</details>
 
 ### BSL-1.0
+
+<details>
 
 ```
 Boost Software License - Version 1.0 - August 17th, 2003
@@ -5215,8 +5222,11 @@ The copyright notices in the Software and this entire statement, including the a
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
+</details>
 
 ### BitstreamVera
+
+<details>
 
 ```
 Bitstream Vera Fonts Copyright
@@ -5244,8 +5254,11 @@ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, E
 Except as contained in this notice, the names of Gnome, the Gnome Foundation, and Bitstream Inc., shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from the Gnome Foundation or Bitstream Inc., respectively. For further information, contact: fonts at gnome dot org.
 ```
 
+</details>
 
 ### CC0-1.0
+
+<details>
 
 ```
 Creative Commons Legal Code
@@ -5271,8 +5284,11 @@ For these and/or other purposes and motivations, and without any expectation of 
       d. Affirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.
 ```
 
+</details>
 
 ### BSD-3-Clause
+
+<details>
 
 ```
 Copyright (c) 2001-2002 Enthought, Inc.  2003-2019, SciPy Developers.
@@ -6188,8 +6204,11 @@ Public License instead of this License.  But first, please read
 
 ```
 
+</details>
 
 ### BSD-3-Clause
+
+<details>
 
 ```
 Copyright (c) 2005-2022, NumPy Developers.
@@ -6249,8 +6268,11 @@ License: Zlib
 
 ```
 
+</details>
 
 ### FTL
+
+<details>
 
 ```
 The FreeType Project LICENSE
@@ -6293,8 +6315,11 @@ Legal Terms
    http://www.freetype.org --- end of FTL.TXT ---
 ```
 
+</details>
 
 ### LGPL-3.0-only
+
+<details>
 
 ```
 GNU LESSER GENERAL PUBLIC LICENSE
@@ -6364,8 +6389,11 @@ Each version is given a distinguishing version number. If the Library as you rec
 If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy&#39;s public statement of acceptance of any version is permanent authorization for you to choose that version for the Library.
 ```
 
+</details>
 
 ### GPL-1.0-or-later
+
+<details>
 
 ```
 GNU GENERAL PUBLIC LICENSE
@@ -6421,9 +6449,12 @@ Yoyodyne, Inc., hereby disclaims all copyright interest in the program `Gnomovis
 That&#39;s all there is to it!
 ```
 
+</details>
 
 ### GPL-3.0-only
 
+<details>
+
 ```
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
@@ -6553,9 +6584,12 @@ You should also get your employer (if you work as a programmer) or school, if an
 The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read &lt;http s ://www.gnu.org/philosophy/why-not-lgpl.html&gt;.
 ```
 
+</details>
 
 ### GPL-3.0-or-later
 
+<details>
+
 ```
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
@@ -6685,11 +6719,14 @@ You should also get your employer (if you work as a programmer) or school, if an
 The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read &lt;http s ://www.gnu.org/philosophy/why-not-lgpl.html&gt;.
 ```
 
+</details>
 
 ### GPL-3.0-with-GCC-exception
 
+<details>
+
 ```
-﻿insert GPL v3 text here GCC RUNTIME LIBRARY EXCEPTION
+GCC RUNTIME LIBRARY EXCEPTION
 Version 3.1, 31 March 2009
 General information: http://www.gnu.org/licenses/gcc-exception.html
 Copyright (C) 2009 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;
@@ -6709,8 +6746,11 @@ When you use GCC to compile a program, GCC may combine portions of certain GCC h
 The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of GCC.
 ```
 
+</details>
 
 ### MatPlotLib
+
+<details>
 
 ```
 License agreement for matplotlib versions 1.3.0 and later
@@ -6814,8 +6854,11 @@ Licensee agrees to be bound by the terms and conditions of this License
 Agreement.
 ```
 
+</details>
 
 ### MIT
+
+<details>
 
 ```
 MIT License
@@ -6840,8 +6883,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+</details>
 
 ### MPL-2.0
+
+<details>
 
 ```
 Mozilla Public License Version 2.0
@@ -6928,8 +6974,11 @@ Exhibit B - &quot;Incompatible With Secondary Licenses&quot; Notice
 This Source Code Form is &quot;Incompatible With Secondary Licenses&quot;, as defined by the Mozilla Public License, v. 2.0.
 ```
 
+</details>
 
 ### NCSA
+
+<details>
 
 ```
 University of Illinois/NCSA Open Source License
@@ -6945,8 +6994,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
 ```
 
+</details>
 
 ### BSD-3-Clause
+
+<details>
 
 ```
 NetworkX is distributed with the 3-clause BSD license.
@@ -6989,8 +7041,11 @@ NetworkX is distributed with the 3-clause BSD license.
 
 ```
 
+</details>
 
 ### PIL
+
+<details>
 
 ```
 By obtaining, using, and/or copying this software and/or its associated documentation, you agree that you have read, understood, and will comply with the following terms and conditions:
@@ -7000,8 +7055,11 @@ Permission to use, copy, modify, and distribute this software and its associated
 SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ```
 
+</details>
 
 ### Python-2.0
+
+<details>
 
 ```
 PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
@@ -7036,8 +7094,11 @@ Permission to use, copy, modify, and distribute this software and its documentat
 STICHTING MATHEMATISCH CENTRUM DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL STICHTING MATHEMATISCH CENTRUM BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ```
 
+</details>
 
 ### Qhull
+
+<details>
 
 ```
 Qhull, Copyright (c) 1993-2003
@@ -7051,8 +7112,11 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
    5. There is no warranty or other guarantee of fitness for Qhull, it is provided solely &quot;as is&quot;. Bug reports or fixes may be sent to qhull_bug@qhull.org; the authors may or may not act on them as they desire.
 ```
 
+</details>
 
 ### SunPro
+
+<details>
 
 ```
 Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
@@ -7062,9 +7126,10 @@ Permission to use, copy, modify, and distribute this
 software is freely granted, provided that this notice
 is preserved.
 ```
-
+</details>
 
 ### TCL
+<details>
 
 ```
 This software is copyrighted by the Regents of the University of California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState Corporation and other parties. The following terms apply to all files associated with the software unless explicitly disclaimed in individual files.
@@ -7073,9 +7138,10 @@ IN NO EVENT SHALL THE AUTHORS OR DISTRIBUTORS BE LIABLE TO ANY PARTY FOR DIRECT,
 THE AUTHORS AND DISTRIBUTORS SPECIFICALLY DISCLAIM ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THIS SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; BASIS, AND THE AUTHORS AND DISTRIBUTORS HAVE NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 GOVERNMENT USE: If you are acquiring this software on behalf of the U.S. government, the Government shall have only &quot;Restricted Rights&quot; in the software and related documentation as defined in the Federal Acquisition Regulations (FARs) in Clause 52.227.19 (c) (2). If you are acquiring the software on behalf of the Department of Defense, the software shall be classified as &quot;Commercial Computer Software&quot; and the Government shall have only &quot;Restricted Rights&quot; as defined in Clause 252.227-7013 (c) (1) of DFARs. Notwithstanding the foregoing, the authors grant the U.S. Government and others acting in its behalf permission to use and distribute the software in accordance with the terms specified in this license.
 ```
-
+</details>
 
 ### OFL-1.1
+<details>
 
 ```
 The cmr10.pfb file is a Type-1 version of one of Knuth&#39;s Computer Modern fonts.
@@ -7320,9 +7386,10 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ```
-
+</details>
 
 ### MIT
+<details>
 
 ```
 This software is under the MIT Licence
@@ -7350,9 +7417,10 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ```
-
+</details>
 
 ### Zlib
+<details>
 
 ```
 zlib License Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
@@ -7362,9 +7430,10 @@ Permission is granted to anyone to use this software for any purpose, including 
    2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
    3. This notice may not be removed or altered from any source distribution.
 ```
-
+</details>
 
 ### MIT
+<details>
 
 ```
 `tqdm` is a product of collaborative work.
@@ -7418,9 +7487,10 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ```
-
+</details>
 
 ### bsd-2-clause-views
+<details>
 
 ```
 Redistribution and use in source and binary forms, with or without modification,
@@ -7448,9 +7518,10 @@ The views and conclusions contained in the software and documentation are those
 of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the FreeBSD Project.
 ```
-
+</details>
 
 ### bsd-3-clause-open-mpi
+<details>
 
 ```
 Redistribution and use in source and binary forms, with or without
@@ -7488,16 +7559,18 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
-
+</details>
 
 ### bsl-original
+<details>
 
 ```
 Permission to copy, use, modify, sell and distribute this software is granted provided this copyright notice appears in all copies. This software is provided &quot;as is&quot; without express or implied warranty, and with no claim as to its suitability for any purpose.
 ```
-
+</details>
 
 ### cc-pd
+<details>
 
 ```
 The person or persons who have associated work with this document (the &quot;Dedicator&quot; or &quot;Certifier&quot;) hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the &quot;Work&quot;) to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a &quot;dedicator&quot; below.
@@ -7508,18 +7581,20 @@ Dedicator makes this dedication for the benefit of the public at large and to th
 
 Dedicator recognizes that, once placed in the public domain, the Work may be freely reproduced, distributed, transmitted, used, modified, built upon, or otherwise exploited by anyone for any purpose, commercial or non-commercial, and in any way, including by methods that have not yet been invented or conceived.
 ```
-
+</details>
 
 ### mit-nagy
+<details>
 
 ```
 Permission to use, copy, modify, and/or distribute this code
 for any purpose with or without fee is hereby granted.
 There is no warranty.
 ```
-
+</details>
 
 ### mit-old-style
+<details>
 
 ```
 Permission to use, copy, modify, distribute, and sell this software and
@@ -7531,9 +7606,10 @@ software for any purpose. It is provided &quot;as is&quot; without express or
 implied warranty.
 
 ```
-
+</details>
 
 ### openpub
+<details>
 
 ```
 Open Publication License
@@ -7622,7 +7698,7 @@ Send E-mail to opal@opencontent.org or simply reply to a previous post.
 To unsubscribe from the Open Publication Authors&#39; List:
 Send E-mail to opal-request@opencontent.org with the word &quot;unsubscribe&quot; in the body.
 ```
-
+</details>
 
 
 

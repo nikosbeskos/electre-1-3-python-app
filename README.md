@@ -96,15 +96,33 @@ This code was developed for my Diploma thesis of my master's degree in Industria
 
 ## License
 
-Specify the project's license. For example, if you're using an open-source license like MIT, you can include the license text.
+This project is licensed under the BSD 3-Clause License. License can be found [here](LICENSE.md).
 
 ## Contact
 
-Provide your contact information, such as your email or a link to your website, so users can reach out for questions or feedback.
+Contact:
+- [nikosbeskos@hotmail.com](mailto:nikosbeskos@hotmail.com)
+- [nikosbeskosc@gmail.com](mailto:nikosbeskosc@gmail.com)
 
 ## Acknowledgments
 
-Mention any contributors or libraries you've used in your project.
+
+
+We would like to express our gratitude to the following individuals, projects, and organizations for their contributions, support, and inspiration:
+
+- [Athanasios P. Vavatsikos](https://apvavatsikos.wordpress.com/)
+  - I would like to express my gratitude to Professor Athanasios P. Vavatsikos for his guidance and support throughout the entire process of my thesis and this project which is part of it. Their expertise, patience, and commitment to academic excellence have been instrumental in the successful completion of this work.
+  
+- [Anastasia Saridou](https://robotics.pme.duth.gr/asaridou/)
+  - Special thanks to Anastasia Saridou for her expertise and help through this project's code development
+
+- [Open Source Libraries and Frameworks used in this project](#dependencies)
+  - I am sincerely thankful for the generous contributions, and I acknowledge the collective effort of the open-source community.
+
+- Friends who helped with their "eye" for nice-looking visuals and colors in this project's GUI development.
+
+I thank each of these contributors, whether through code, ideas, or other forms of support, for their invaluable contributions to the project.
+
 
 ## Dependencies
 
@@ -127,3 +145,15 @@ Mention any contributors or libraries you've used in your project.
 - [Pandas](https://pandas.pydata.org/)
     - License: [BSD-3-Clause License](https://github.com/pandas-dev/pandas/blob/main/LICENSE)
     - Copyright © [2023 pandas](https://pandas.pydata.org/)
+
+- [PySide6](https://www.qt.io/qt-for-python)
+    - License: [LGPL Version 3](https://www.qt.io/licensing)
+    - Copyright © [2023 The Qt Company Ltd](https://www.qt.io/group)
+
+- [SciPy](https://scipy.org/)
+    - License: [BSD-3-Clause](https://github.com/scipy/scipy/blob/main/LICENSE.txt)
+    - Copyright © [2001-2002 Enthought, Inc. 2003-2023, SciPy Developers](https://scipy.org/)
+
+- [tqdm](https://tqdm.github.io/)
+    - License: [MPL-2.0 AND MIT](https://github.com/tqdm/tqdm/blob/master/LICENCE)
+    - Copyright © [2023, Tqdm Developers](https://tqdm.github.io/)
