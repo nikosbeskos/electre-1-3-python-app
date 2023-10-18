@@ -81,7 +81,7 @@ python main.py
 The way it works, is by using an excel spreadsheet that has a particular form, like this:
 
 
-![excel table format demo](content\images\excel_help.png)
+![excel table format demo](content/images/excel_help.png)
 
 
 > [!IMPORTANT]
