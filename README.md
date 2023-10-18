@@ -78,7 +78,11 @@ If you selected to install it via the second method, you can use an IDE of your 
 python main.py
 ```
 
-The way it works, is by using an excel spreadsheet that has a particular form, like this:![](content\images\excel_help.png)
+The way it works, is by using an excel spreadsheet that has a particular form, like this:
+
+
+![](content\images\excel_help.png)
+
 
 > [!IMPORTANT]
 >The requirements of the excel spreadsheet are:
